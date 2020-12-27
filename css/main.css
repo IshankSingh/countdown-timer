@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+}
+
+body {
+  /* background: linear-gradient(#201E2B, #231D2B); */
+  background: linear-gradient(
+    hsl(234, 17%, 12%) 10%,
+    hsl(235, 16%, 14%) 20%,
+    hsl(266, 19%, 14%) 33.33%
+  );
+  position: relative;
+}
+
+.main-container {
+  background-image: url(../images/bg-stars.svg);
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.heading-container {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 140%;
+  display: inline-block;
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.time-container {
+  text-align: center;
+}
+
+.time {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.act-time {
+  width: 120px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  background-color: #3c4059;
+  margin: 0 20px 20px 20px;
+  box-shadow: 0 -60px #363950, 0 10px #000, 0 -10px #000;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 70%;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #7c7b97;
+}
+
+.time-text {
+  font-size: 300%;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 4px;
+  color: hsl(345, 95%, 68%);
+  position: absolute;
+  top: -45%;
+  left: 25%;
+}
+
+/* bottom mountain image */
+.mountain {
+  width: 100vw;
+  height: 28vh;
+  object-fit: fill;
+  position: absolute;
+  bottom: 0;
+}
+
+.social-icon-container {
+  width: 100vw;
+  height: 14vh;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.icon:hover {
+  fill: #fb6087;
+  margin: 0 40px;
+}
+
+@media all and (max-width: 700px) {
+  .heading-container {
+    padding-bottom: 60px;
+  }
+
+  .heading {
+    font-size: 90%;
+  }
+  .act-time {
+    width: 80px;
+    height: 40px;
+    margin: 0 10px 15px 10px;
+    box-shadow: 0 -40px #363950, 0 7px #000, 0 -7px #000;
+    border-radius: 6px;
+  }
+
+  h3 {
+    font-size: 50%;
+  }
+
+  .time-text {
+    font-size: 200%;
+    top: -45%;
+    left: 25%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .heading-container {
+    padding-bottom: 60px;
+  }
+
+  .heading {
+    width: 70vw;
+  }
+  .act-time {
+    width: 60px;
+    height: 30px;
+    margin: 0 10px 15px 10px;
+    box-shadow: 0 -30px #363950, 0 5px #000, 0 -5px #000;
+    border-radius: 4px;
+  }
+
+  h3 {
+    font-size: 30%;
+  }
+
+  .time-text {
+    font-size: 120%;
+    top: -35%;
+    left: 25%;
+  }
+}
+
+@media all and (max-width: 351px) {
+  .time-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .time {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .act-time {
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    background-color: #3c4059;
+    margin: 0 10px 15px 10px;
+    box-shadow: 0 -40px #363950, 0 7px #000, 0 -7px #000;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 70%;
+    font-family: "Overpass", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #7c7b97;
+  }
+
+  .time-text {
+    font-size: 200%;
+    font-family: "Overpass", sans-serif;
+    letter-spacing: 4px;
+    color: hsl(345, 95%, 68%);
+    position: absolute;
+    top: -45%;
+    left: 25%;
+  }
+}
